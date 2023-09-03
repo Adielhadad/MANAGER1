@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sign Up </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='signupStyle.css'>
+</head>
+
+<body>
+    <div id="div1">
+        <p id="p1">Wellcome: </p>
+    </div>
+
+    <div id="div2">
+        <form name="form_details" action="/details" method="post" onsubmit="valid()">
+            <div id="div3">
+                <div class="flexItem">
+                    <input name="firstName" type="text" placeholder="Enter your first Name name">
+                </div>
+                <div class="flexItem">
+                    <input name="lastName" type="text" placeholder="Enter your last Name name">
+                </div>
+                <div class="flexItem">
+                    <input name="userId" type="text" placeholder="Insert Your Id Please">
+                </div>
+                <div class="flexItem">
+                    <input name="userEmail" type="email" placeholder="Insert your email please">
+                </div>
+                <div class="flexItem">
+                    <input name="userPassword" type="password" placeholder="Insert Your password Please">
+                </div>
+                <div class="flexItem">
+                    <input name="conPass" type="password" placeholder="Confirm your password please">
+                </div>
+                <div class="flexItem">
+                    <button>Submit</button>
+                </div>
+
+
+
+            </div>
+        </form>
+    </div>
+
+    <script src='signup.js'></script>
+
+</body>
+
+</html>

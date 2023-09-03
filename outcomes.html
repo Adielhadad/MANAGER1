@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Outcomes</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='outcomes.css'>
+
+</head>
+
+<body>
+  <div id="div1">
+    <ul>
+      <li><a href="incomes.html">הכנסות</a></li>
+      <li><a href="outcomes.html">הוצאות</a></li>
+      <li><a href="need2buy.html">אשף הרכישות</a></li>
+      <li><a href="welcome.html">עמוד ראשי</a></li>
+  </ul>
+    <p id="p11">Wellcome: </p>
+
+  </div>
+
+
+  <div id="div2">
+
+    <div class="flexitem2">
+      <p class="p1"> מיסים ותשלומי רשויות </p>
+
+      <p class="p2">ארנונה</p>
+      <input id="In01" type="number" value="0">
+      <p class="p2">חשבון חשמל</p>
+      <input id="In02" type="number" value="0">
+      <p class="p2">חשבון מים</p>
+      <input id="In03" type="number" value="0">
+      <p class="p2">חשבון גז</p>
+      <input id="In04" type="number" value="0">
+      <p class="p2">דוחו"ת וקנסות</p>
+      <input id="In05" type="number" value="0">
+      <p class="p2">סה"כ הוצאות</p>
+      <input id="Out1"  type="number"  value="0">
+      <button id="but1" onclick="sumOutcomes1()">חשב</button>
+    </div>
+
+    <div class="flexitem2">
+
+      <p class="p1">הוצאות דיור</p>
+
+      <p class="p2">משכנתא</p>
+      <input id="In11" type="number" value="0">
+      <p class="p2">ביטוח משכנתא</p>
+      <input id="In12" type="number" value="0">
+      <p class="p2">שיפוצים</p>
+      <input id="In13" type="number" value="0">
+      <p class="p2">רענון /החלפת מוצרים</p>
+      <input id="In14" type="number" value="0">
+      <p class="p2">תיקונים</p>
+      <input id="In15" type="number" value="0">
+      <p class="p2">סה"כ הוצאות</p>
+      <input id="Out2" type="number" value="0">
+      <button id="but2" onclick="sumOutcomes2()">חשב</button>
+    </div>
+
+    <div class="flexitem2">
+      <p class="p1"> כלכלת בית </p>
+      <p class="p2">רכישות בסופר</p>
+      <input id="In21" type="number" value="0">
+
+      <p class="p2">השלמות מוצרי מזון</p>
+      <input id="In22" type="number" value="0">
+
+      <p class="p2">ארוחות מחוץ לבית</p>
+      <input id="In23" type="number" value="0">
+      <p class="p2">שמרטפות</p>
+      <input id="In24" type="number" value="0">
+      <p class="p2">אירוח ואירועים מיוחדים</p>
+      <input id="In25" type="number" value="0">
+      <p class="p2">סה"כ הוצאות</p>
+      <input id="Out3" type="number" value="0">
+      <button id="but1" onclick="sumOutcomes3()">חשב</button>
+    </div>
+
+
+    <div class="flexitem2">
+      <p class="p1"> הוצאות רכב ותחבורה </p>
+
+      <p class="p2">אגרות רישוי</p>
+      <input id="In31" type="number" value="0">
+
+      <p class="p2">ביטוחים</p>
+      <input id="In32" type="number" value="0">
+
+      <p class="p2">אגרות רישוי</p>
+      <input id="In33" type="number" value="0">
+
+      <p class="p2">דלק</p>
+      <input id="In34" type="number" value="0">
+
+      <p class="p2">בלאי</p>
+      <input id="In35" type="number" value="0">
+
+      <p class="p2">כבישי אגרה וחניות</p>
+      <input id="In36" type="number" value="0">
+
+      <p class="p2">טיפול תקופתי</p>
+      <input id="In37" type="number" value="0">
+      <p class="p2">סה"כ הוצאות</p>
+      <input id="Out4" type="number" value="0">
+      <button id="but1" onclick="sumOutcomes4()">חשב</button>
+    </div>
+
+    <div class="flexitem2">
+      <p class="p1"> הוצאות רפואה</p>
+
+      <p class="p2">ביטוח קופת חולים</p>
+      <input id="In41" type="number" value="0">
+
+      <p class="p2"> ביטוחים משלימים</p>
+      <input id="In42" type="number" value="0">
+
+      <p class="p2">תרופות וציוד רפואי</p>
+      <input id="In43" type="number" value="0">
+      <p class="p2">סה"כ הוצאות</p>
+      <input id="Out5" type="number" value="0">
+      <button id="but1" onclick="sumOutcomes5()">חשב</button>
+    </div>
+    <div class="flexitem2">
+      <p class="p1"> הוצאות לימודים והשכלה</p>
+
+      <p class="p2">שכר לימוד</p>
+      <input id="In51" type="number" value="0">
+
+      <p class="p2">חוגים והעשרה</p>
+      <input id="In52" type="number" value="0">
+
+      <p class="p2">תשלומי הורים ושונות</p>
+      <input id="In53" type="number" value="0">
+
+      <p class="p2">ציוד לימודי</p>
+      <input id="In54" type="number" value="0">
+      <p class="p2">סה"כ הוצאות</p>
+      <input id="Out6" type="number" value="0">
+      <button id="but1" onclick="sumOutcomes6()">חשב</button>
+    </div>
+    <div class="flexitem2">
+      <p class="p1"> הוצאות פנאי ושונות</p>
+
+      <p class="p2">מתנות</p>
+      <input id="In61" type="number" value="0">
+
+      <p class="p2">אירועים משפחתיים - ימי הולדת, נישואין וכדומה</p>
+      <input id="In62" type="number" value="0">
+
+      <p class="p2">טיולים משפחתיים</p>
+      <input id="In63" type="number" value="0">
+
+      <p class="p2">ימי כיף</p>
+      <input id="In64" type="number" value="0">
+
+      <p class="p2">בלת"מ</p>
+      <input id="In65" type="number" value="0">
+      <p class="p2">סה"כ הוצאות</p>
+      <input id="Out7" type="number" value="0">
+      <button id="but1" onclick="sumOutcomes7()">חשב</button>
+    </div>
+    <div class="flexitem2">
+      <p class="p1"> ביגוד והנעלה</p>
+
+      <p class="p2">ביגוד</p>
+      <input id="In71" type="number" value="0">
+
+      <p class="p2">הנעלה</p>
+      <input id="In72" type="number" value="0">
+
+      <p class="p2">איפור בישום וטיפוח</p>
+      <input id="In73" type="number" value="0">
+      <p class="p2">סה"כ הוצאות</p>
+      <input id="Out8" type="number" value="0">
+      <button id="but1" onclick="sumOutcomes8()">חשב</button>
+    </div>
+    <div class="flexitem2">
+      <p class="p1"> בעלי חיים</p>
+
+      <p class="p2">מזון</p>
+      <input id="In81" type="number" value="0">
+
+      <p class="p2">בריאות וטיפוח</p>
+      <input id="In82" type="number" value="0">
+
+      <p class="p2">ציוד ייעודי</p>
+      <input id="In83" type="number" value="0">
+      <p class="p2">סה"כ הוצאות</p>
+      <input id="Out9" type="number" value="0">
+      <button id="but1" onclick="sumOutcomes9()">חשב</button>
+    </div>
+
+    <div class="flexitem2">
+      <p class="p1">הוצאות תקשורת</p>
+
+      <p class="p2">חבילת תקשורת</p>
+      <input id="In91" type="number" value="0">
+
+      <p class="p2">תשלומי אינטרנט</p>
+      <input id="In92" type="number" value="0">
+
+      <p class="p2">ציוד ומכשירים</p>
+      <input id="In93" type="number" value="0">
+
+      <p class="p2">חבילות תקשורת ייעודיות (חו"ל)</p>
+      <input id="In94" type="number" value="0">
+      <p class="p2">סה"כ הוצאות</p>
+      <input id="Out10" type="number" value="0">
+      <button id="but1" onclick="sumOutcomes10()">חשב</button>
+    </div>
+    <div class="flexitem2">
+      <p class="p1">סך ההוצאות החודשיות</p>
+
+
+      <input id="Out11" type="number" value="0">
+      <button id="but1" onclick="sumTotal(); outcomesTotal1()">חשב</button>
+
+
+    </div>
+  </div>
+  </div>
+
+
+
+  <script src='outcomes.js'></script>
+
+</body>
+
+</html>

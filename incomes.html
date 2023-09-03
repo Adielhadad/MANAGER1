@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Incomes</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='income.css'>
+   
+</head>
+
+<body>
+    <div id="div1">
+        <ul>
+            <li><a href="incomes.html">הכנסות</a></li>
+            <li><a href="outcomes.html">הוצאות</a></li>
+            <li><a href="need2buy.html">אשף הרכישות</a></li>
+            <li><a href="welcome.html">עמוד ראשי</a></li>
+        </ul>
+        <p id="p11">Wellcome: </p>
+
+    </div>
+
+
+    <div id="div2">
+
+        <div class="flexitem2">
+            <p class="p1"> משכורות שוטפות </p>
+
+            <p class="p2">משכורת 1</p>
+            <input id="In01" type="number" value="0">
+            <p class="p2">משכורת 2</p>
+            <input id="In02" type="number" value="0">
+            <p class="p2">סה"כ משכורות חודשיות</p>
+            <input id="Out1" type="number" value="0">
+            <button id="but1" onclick="sumOfSal()">חשב</button>
+        </div>
+
+        <div class="flexitem2">
+
+            <p class="p1">הכנסות שכר עיתיות</p>
+
+            <p class="p2">הבראה</p>
+            <input id="In11" type="number" value="0">
+            <input id="In11A" type="number" placeholder="SELECT MONTH">
+            <p class="p2">ביגוד</p>
+            <input id="In12" type="number" value="0">
+            <input id="In12A" type="number" placeholder="SELECT MONTH">
+            <p class="p2">שונות</p>
+            <input id="In13" type="number" value="0">
+            <input id="In13A" type="number" placeholder="SELECT MONTH" >
+            <p class="p2">שונות</p>
+            <input id="In14" type="number" value="0">
+            <input id="In14A" type="number" placeholder="SELECT MONTH">
+
+            <p class="p2"> סה"כ הכנסות עיתיות</p>
+            <input id="Out2" type="number" value="0">
+            <button id="but2" >חשב</button>
+        </div>
+
+        <div class="flexitem2">
+            <p class="p1"> תשלומי רשויות</p>
+            <p class="p2">כסף ילדים</p>
+            <input id="In21" type="number" value="0">
+
+            <p class="p2">מענקים שונים</p>
+            <input id="In22" type="number" value="0">
+
+            <p class="p2">סה"כ תשלומי רשויות</p>
+            <input id="Out3" type="number" value="0">
+            <button id="but2" onclick="sumOfGrnt()">חשב</button>
+        </div>
+        <div class="flexitem2">
+            <p class="p1">סך ההכנסות החודשיות</p>
+            
+            <input id="Out11" type="number" value="0">
+            <button onclick="sumOfExtInc()">חשב</button>
+        </div>
+    </div>
+
+
+</body>
+<script src='incomes.js  '></script>
+</html>
